@@ -7,3 +7,5 @@ While conducting research on approaches to similar problems in AI, I came across
 In what originally started as a Twitter conversation, Brandon Rohrer, formally of Facebook and now a Data Scientist at LinkedIn, proved an exciting discovery- that using a sliding window implementation of cosign similarity is an improvement over using traditional neural networks for feature detection. The reason for this is that convolution depends on the sliding dot product interaction between the kernel and the signal without normalizing the corresponding vectors. Normalizing both vectors to the magnitude of 1 and addint two paramaters, p and q, with p raised to the power of some exponent, p, for peak similarity and q serving as a floor reduces the amount of noise in the model and increases the effectiveness of the model's feature detection. I took this logic and incorporated it into a custom sequential model in keras for this test. 
 
 The logic of sharpened cosign similarity and the Inverse Reinforcement Learning algorithm are included in the images folder. 
+
+**Credit to: Brandon Rohrer, Raphael Pisoni, Jonathan Ho and Stefano Erhman.**
